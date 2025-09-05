@@ -10,42 +10,42 @@ The assistant should:
 
 ## Setup Instructions:
 **1. Files Included:**
-README.md — contains the AI prompt, reasoning, and setup instructions.
+README.md — contains the AI prompt, reasoning, and setup instructions. <br/>
 prompt.txt — a plain text version of the AI debugging prompt for quick reuse.
 
 **2. Use Case:**
-Copy the provided prompt into any AI assistant (like ChatGPT or Gemini).
-Paste the student's Python code as input.
+Copy the provided prompt into any AI assistant (like ChatGPT or Gemini). <br/>
+Paste the student's Python code as input. <br/>
 The AI will then use the prompt instructions to guide debugging in a supportive, learning-oriented way.
 
 
 ## Design Choice:
 **Why I worded it the way I did?**
-The instructions specify that the assistant shouldn’t reveal the correct solution, only hints.
-By emphasizing "point out potential issues" and "ask guiding questions" rather than "give the fixed code", the AI avoids spoiling answers.
+The instructions specify that the assistant shouldn’t reveal the correct solution, only hints. <br/>
+By emphasizing "point out potential issues" and "ask guiding questions" rather than "give the fixed code", the AI avoids spoiling answers. <br/>
 Phrasing like "student-friendly, constructive, supportive" ensures the AI takes a teaching role, not just a debugger role.
 
 **How I ensured it avoids giving the solution?**
-Explicitly said: "Avoid writing or revealing the full corrected code."
-Instead of solutions, the AI is told to use hints and leading questions.
+Explicitly said: "Avoid writing or revealing the full corrected code." <br/>
+Instead of solutions, the AI is told to use hints and leading questions. <br/>
 This ensures the help feels like tutoring, not code replacement.
 
 **How it encourages helpful, student-friendly feedback?**
-Uses “Explain in plain language…” -> Builds student understanding.
-“Give hints… ask questions…” -> Encourages active problem-solving.
+Uses “Explain in plain language…” -> Builds student understanding. <br/>
+“Give hints… ask questions…” -> Encourages active problem-solving. <br/>
 “Keep the tone encouraging, constructive…”-> Prevents discouragement and builds confidence.
 
 
 ## Reasoning Behind the Prompt
 **What tone and style should the AI use when responding?**
-Supportive, patient, and encouraging — like a tutor who wants the student to succeed.
-Avoid harsh criticism; instead of "this is wrong," say “This part looks unusual — what do you expect it to do?”
+Supportive, patient, and encouraging — like a tutor who wants the student to succeed. <br/>
+Avoid harsh criticism; instead of "this is wrong," say “This part looks unusual — what do you expect it to do?” 
 
 **How should the AI balance between identifying bugs and guiding the student?**
-The AI should identify suspicious or incorrect parts of code but not hand over the solution.
+The AI should identify suspicious or incorrect parts of code but not hand over the solution. <br/>
 Example: If there’s a wrong loop condition, the AI might say:
 “Notice how this condition works when the variable is zero. Do you think that matches what you want?”
 
-**How would you adapt this prompt for beginner vs. advanced learners?**
-Beginner version: More emphasis on explaining Python syntax concepts and step-by-step logic. Use analogies and simple language.
+**How would you adapt this prompt for beginner vs. advanced learners?** 
+Beginner version: More emphasis on explaining Python syntax concepts and step-by-step logic. Use analogies and simple language. <br/>
 Advanced version: More emphasis on deeper debugging strategies, efficiency concerns, and asking open-ended guiding questions, e.g., “How might using list comprehensions affect this section?
