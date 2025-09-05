@@ -10,8 +10,8 @@ The assistant should:
 
 ## Setup Instructions:
 **1. Files Included:** <br/>
-README.md — contains the AI prompt, reasoning, and setup instructions. <br/>
-prompt.txt — a plain text version of the AI debugging prompt for quick reuse.
+README.md- contains the AI prompt, reasoning, and setup instructions. <br/>
+prompt.txt- a plain text version of the AI debugging prompt for quick reuse.
 
 **2. Use Case:** <br/>
 Copy the provided prompt into any AI assistant (like ChatGPT or Gemini). <br/>
